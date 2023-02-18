@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+.App{
+border: 2px solid brown;
+  background-color: blanchedalmond;
+}
+.divvv {
+width: 30%;
+ text-align: center;
+  position: relative;
+  animation: mymove 2s ;
+  animation-fill-mode: forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes mymove {
+  from {left: -100px;}
+  to {left: 50px;}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.divvv2 {
+  width: 30%;
+   
+    position: relative;
+    animation: mymove2 2s ;
+    animation-fill-mode: forwards;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes mymove2 {
+    from {right: -100px;}
+    to {right: 50px;}
   }
+.Head1{
+  font-size: 44px;
+  color: black;
+  font-weight: 700;
+
+}
+
+.Head1
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+   
+}
+
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+    background-position: 200% center;
   }
 }
+.para1{
+  width: 60%;
+font-size: 22px;
+color: brown;
+}
+.para2{
+  width: fit-content;
+  font-size: 22px;
+  color: brown;
+}
+.Image1{
+  width: 400px;
+  height: 300px;
+
+}
+.Image1:hover{
+  box-shadow: 3px 3px 3px 3px red;
+}
+.Image2{
+  width: 300px;
+  height: 300px;
+}
+.carousel .slider-wrapper {
+  overflow: hidden;
+  margin: auto;
+
+  transition: height .15s ease-in;
+}
+.carousel .slide img {
+
+  vertical-align: top;
+  border: 0;
+}
+.carousel-root {
+  outline: none;
+
+}
+.carousel .thumbs-wrapper {
+display: none;
+}
+.carousel.carousel-slider {
+  position: relative;
+
+  overflow: hidden;
+
+}
+.vl {
+  border-left: 6px solid brown;
+  height: 130px;
+  margin-left: 40%;
+  animation: mymove5 2s  ;
+  animation-fill-mode: forwards;
+
+}
+.v2 {
+  background-color: brown;
+  width: 70%;
+  height: 5px;
+  margin-left: 40%;
+  margin-top: 0%;
+ margin-bottom: 0%;
+  line-height: 80%;
+
+}
+.v3 {
+  background-color: brown;
+  width: 90%;
+  height: 5px;
+  margin-left: 40%;
+  margin-top: 0%;
+ margin-bottom: 15%;
+  line-height: 80%;
+}
+.box1{
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  position: absolute;
+
+  text-align: center;
+  font-size: 24px;
+  list-style: 40px;
+  margin-top: -2%;
+  animation: mymove4 2s  ;
+  animation-fill-mode: forwards;
+  padding-top: 20px;
+  box-shadow:red 0px 5px 15px;
+}
+.box1:hover{
+  box-shadow: red 0px 5px 15px;
+  cursor: pointer;
+}
+.box2{
+  width: 200px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  padding-top: 20px;
+
+  text-align: center;
+  font-size: 24px;
+  list-style: 40px;
+  margin-top: -2%;
+
+  animation: mymove3 2s  ;
+  animation-fill-mode: forwards;
+  box-shadow:red 0px 5px 15px;
+}
+
+.box2:hover{
+  box-shadow:red 0px 5px 15px;
+  cursor: pointer;
+} 
+  @keyframes mymove3 {
+    from {right: -1000px;}
+    to {right: 570px;}
+  }
+  @keyframes mymove4 {
+    from {right: -1000px;}
+    to {right: 600px;}
+  }
+  @keyframes mymove5 {
+    from {top: 500px;}
+    to {top: 800px;}
+  }
+
+  .button1{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 160px;
+    font-size: 18px;
+  }
+  .text {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
